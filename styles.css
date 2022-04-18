@@ -2,7 +2,11 @@
 *::before,
 *::after{
     box-sizing: border-box;
+    font: inherit;
+    margin: 0;
+    padding: 0;
 }
+
 
 :root{
     --clr-primary:#A60A33;
@@ -15,6 +19,7 @@
 }
 
 body{
+    width: 100%;
     margin: 0;
     font-family: 'Kanit', sans-serif;
     font-size: 1.125rem;
@@ -157,9 +162,28 @@ header{
     margin-bottom: 0.5em;
 }
 
-main{
-    height: 100vh;
+.main{
     padding: 3em 1em 10rem;
+    overflow: hidden;
+}
+
+
+.main--nav{
+    background-image: url(media/background.png);
+    background-size: cover;
+    max-width: auto;
+   
+}
+
+.main__title{
+    font-family: 'Work Sans', sans-serif; 
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: .75em;
+}
+
+.main__intro{
+    margin-bottom: 3em;
 }
 
 @media(min-width: 544px){
@@ -208,20 +232,4 @@ main{
 }
 }
 
-.main--nav{
-    background-image: url(media/background.png);
-    background-size: cover;
-    overflow: hidden;
-}
-
-.main__title{
-    font-family: 'Work Sans', sans-serif; 
-    font-size: 3rem;
-    line-height: 1;
-    margin-bottom: .75em;
-}
-
-.main__intro{
-    margin-bottom: 3em;
-}
 
